@@ -90,6 +90,7 @@ def analizarAccionesTecnologicas(informacionAcciones) :
     )
     return response['choices'][0]['message']['content']
 
-
-acciones_usuario = input("Por favor menciona qué acciones te gustaría analizar separándolas por una coma. Ejemplo: Apple,Microsoft,Google: ")
-agenteAcciones(acciones_usuario)
+def web_scrapper():
+    print("Bienvenido al agente de acciones tecnológicas")
+    acciones_usuario = input("Por favor menciona qué acciones te gustaría analizar separándolas por una coma. Ejemplo: Apple,Microsoft,Google: ")
+    agenteAcciones(acciones_usuario)
